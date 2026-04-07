@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+html, body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, .font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+.bg-hero {
+  background-image: linear-gradient(to right, rgba(253, 230, 238, 0.8), rgba(220, 252, 231, 0.8)), url('https://loremflickr.com/1200/800/flower,garden?lock=100');
+  background-size: cover;
+  background-position: center;
+}
