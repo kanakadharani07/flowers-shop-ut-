@@ -1,0 +1,140 @@
+.navbar {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(232, 93, 117, 0.1);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 99999 !important;
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand-link span {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  background: linear-gradient(to right, var(--primary-rose), var(--primary-dark));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-main);
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary-rose);
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  color: var(--primary-rose);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.cart-link {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.badge {
+  background: var(--primary-rose);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  height: 18px;
+  min-width: 18px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+}
+
+.nav-user-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-greeting {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.btn-logout {
+  background: var(--bg-cream);
+  color: var(--primary-rose);
+  border: 1px solid var(--primary-rose);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.btn-logout:hover {
+  background: var(--primary-rose);
+  color: white;
+}
+
+.role-link-admin, .role-link-seller {
+  background: var(--primary-rose);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.nav-link-primary {
+  background: var(--primary-rose);
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border-radius: var(--radius-full);
+}
+
+.nav-link-primary:hover {
+  background: var(--primary-dark);
+  color: white;
+  transform: translateY(-1px);
+}

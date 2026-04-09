@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | Bloom & Co.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Bloom & Co.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Boutique</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#" class="cart-btn">Cart (0)</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="product-details-page">
+        <div class="container">
+            <div class="back-nav">
+                <a href="index.html">&larr; Back to Gallery</a>
+            </div>
+            <div id="product-details-container" class="product-details-container">
+                <!-- Details will be injected here via JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Bloom & Co. Premium Floral Boutique. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Load product details on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof loadProductDetails === 'function') {
+                loadProductDetails();
+            }
+        });
+    </script>
+</body>
+</html>

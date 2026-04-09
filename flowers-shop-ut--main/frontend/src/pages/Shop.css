@@ -1,0 +1,210 @@
+.shop-page {
+  padding: 4rem 1rem;
+  background-color: var(--bg-cream);
+  min-height: 100vh;
+}
+
+.shop-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.shop-header {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: var(--text-main);
+  text-align: center;
+}
+
+.shop-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 2.5rem;
+}
+
+@media (max-width: 1024px) {
+  .shop-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.shop-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: 2rem;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--secondary-light);
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+}
+
+.item-details {
+  flex: 1;
+}
+
+.item-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+  color: var(--text-main);
+}
+
+.item-price {
+  font-weight: 700;
+  color: var(--primary-rose);
+}
+
+.item-stock {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.item-qty-controls {
+  display: flex;
+  align-items: center;
+  background: var(--bg-cream);
+  border-radius: var(--radius-full);
+  padding: 0.25rem;
+}
+
+.btn-icon {
+  background: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-sm);
+  color: var(--primary-rose);
+}
+
+.item-qty {
+  width: 40px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.item-total {
+  text-align: right;
+  min-width: 120px;
+}
+
+.item-total-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.btn-remove {
+  background: none;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.btn-remove:hover {
+  color: var(--primary-rose);
+}
+
+/* Sidebar & Summary */
+.shop-card-header {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--secondary-light);
+  padding-bottom: 0.75rem;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.summary-row.total {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 2px solid var(--bg-cream);
+  color: var(--text-main);
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.text-free {
+  color: var(--secondary-sage);
+  font-weight: 700;
+}
+
+.text-total-price {
+  color: var(--primary-rose);
+}
+
+.btn-primary-large {
+  width: 100%;
+  background: var(--primary-rose);
+  color: white;
+  padding: 1.25rem;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 10px 15px -3px rgba(232, 93, 117, 0.3);
+}
+
+.btn-primary-large:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.empty-message {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.empty-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.btn-primary-link {
+  display: inline-block;
+  background: var(--primary-rose);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  margin-top: 2rem;
+}
