@@ -1,0 +1,225 @@
+.dashboard-page {
+  padding: 3rem 1rem;
+  background-color: #fdf2f8; /* pink-50 */
+  min-height: 100vh;
+}
+@media (min-width: 640px) {
+  .dashboard-page { padding-left: 1.5rem; padding-right: 1.5rem; }
+}
+@media (min-width: 1024px) {
+  .dashboard-page { padding-left: 2rem; padding-right: 2rem; }
+}
+
+.dashboard-container {
+  max-width: 80rem; /* max-w-7xl */
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700;
+  color: #111827; /* gray-900 */
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e5e7eb; /* border-gray-200 */
+  padding-bottom: 1rem;
+}
+
+.dashboard-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px 0 rgba(0,0,0,0.06);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-card-header {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #f9fafb; /* gray-50 */
+}
+
+.dashboard-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+/* Tabs */
+.tabs-container {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+.tabs-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -1px;
+  list-style: none;
+  padding: 0;
+}
+.tab-item {
+  margin-right: 0.5rem;
+}
+.tab-btn {
+  display: inline-block;
+  padding: 1rem;
+  border-bottom: 2px solid transparent;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6b7280;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.tab-btn:hover {
+  color: #4b5563;
+  border-bottom-color: #d1d5db;
+}
+.tab-btn.active {
+  color: #db2777; /* pink-600 */
+  border-bottom-color: #db2777;
+}
+
+/* Data Table */
+.table-wrapper {
+  overflow-x: auto;
+}
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.data-table th {
+  padding: 0.75rem 1.5rem;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: #f9fafb;
+}
+.data-table td {
+  padding: 1rem 1.5rem;
+  white-space: nowrap;
+  font-size: 0.875rem;
+  border-top: 1px solid #e5e7eb;
+}
+.data-table tbody tr {
+  background-color: white;
+}
+.data-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+.td-text { color: #6b7280; }
+.td-text-dark { color: #111827; font-weight: 500; }
+.td-bold-pink { color: #db2777; font-weight: 700; }
+
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+}
+
+.table-select {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 2rem 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  outline: none;
+  background-color: white;
+}
+.table-select:focus {
+  border-color: #ec4899;
+  box-shadow: 0 0 0 2px #fbcfe8;
+}
+
+/* Actions */
+.action-btn-primary {
+  color: #4f46e5; /* indigo-600 */
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  margin-right: 1rem;
+}
+.action-btn-primary:hover { color: #312e81; }
+
+.action-btn-danger {
+  color: #dc2626; /* red-600 */
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+.action-btn-danger:hover { color: #7f1d1d; }
+
+/* Dashboard Form */
+.dashboard-form-container {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  max-width: 42rem;
+}
+.dashboard-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form-group label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.25rem;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+  font-size: 0.875rem;
+  outline: none;
+  box-sizing: border-box;
+}
+.form-control:focus {
+  border-color: #ec4899;
+  box-shadow: 0 0 0 2px #fbcfe8;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.btn-submit {
+  width: 100%;
+  background-color: #db2777;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background-color 0.2s;
+}
+.btn-submit:hover {
+  background-color: #be185d;
+}
+
+.empty-state-text {
+  text-align: center;
+  padding: 1.5rem;
+  color: #6b7280;
+}
